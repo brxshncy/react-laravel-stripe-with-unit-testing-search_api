@@ -8,11 +8,12 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Laravel\Cashier\Billable;
+use Laravel\Scout\Searchable;
 
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable, HasApiTokens, Billable;
+    use HasFactory, Notifiable, HasApiTokens, Billable, Searchable;
 
     /**
      * The attributes that are mass assignable.
@@ -43,4 +44,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function searchableAs()
+    {
+        return 'name';
+    }
 }

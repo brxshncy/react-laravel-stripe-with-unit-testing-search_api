@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\PaymentController;
-
+use App\Http\Controllers\API\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +25,8 @@ Route::group(['middleware' => ['auth:api']], function (){
 
     Route::get('payment', [PaymentController::class, 'index']);
     Route::post('payment', [PaymentController::class, 'store']);
-    
+    Route::apiResource('user', UserController::class);
+    Route::get('search', [UserController::class, 'searchUser']);
 });
 
 Route::post('register', [AuthController::class, 'register']);

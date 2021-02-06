@@ -19,12 +19,6 @@ use Cartalyst\Stripe\Stripe;
 */
 
 
-Route::get('test', function (){
-    dd(config('app.stripe'));
-    $stripe = Stripe::make('sk_test_51HTQZqGxwQufiUoYvUc236iQOKqNcDgEdIP3087G1E7zK3zlb2cLle8RagTPqXfRTuwTg1mUOi1ktFwIwpBtk4GE00iMrbeSB5');
-    $customers = $stripe->charges()->all();
-    return $customers;
-});
 
 
 

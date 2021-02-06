@@ -35,6 +35,7 @@ const Home = () => {
         }
     );
     
+   
     const [charges, setCharges] = useState([])
     
     const [flagError, setFlagError] = useState("")
@@ -93,7 +94,7 @@ const Home = () => {
 
                 setCharges(res.data.data.data)
                 
-                console.log(res.data.data.data)
+             
 
                  setLoading(false)
             }
@@ -112,9 +113,9 @@ const Home = () => {
 
   
     return(
-        <Row className="justify-content-center mt-5">
+        <Row className="justify-content-center mt-5 mb-5">
 
-            <Col md={6}>
+            <Col md={8}>
 
            
                 <Card className="mt-5 mb-2">
