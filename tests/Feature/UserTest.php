@@ -36,7 +36,7 @@ class UserTest extends TestCase
     {
         $this->withoutExceptionHandling();
         $payload = [
-            'email' => 'test@test.com',
+            'email' => 'bruce@test.com',
             'password' => '123'
         ];
         $response = $this->postJson('/api/login', $payload);
