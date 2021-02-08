@@ -37,6 +37,7 @@ const Signup = ({ match, history }) => {
                                         <FormGroup>
                                             <Label>Name</Label>
                                             <Input
+                                                rt
                                                 onChange = {(e) => setSignUpData({...signUpData, name: e.target.value})}
                                                 value={signUpData.name}
                                             />
