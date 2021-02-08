@@ -47,6 +47,7 @@ const Login = () => {
                                         <FormGroup>
                                             <Label>Password</Label>
                                             <Input 
+                                                type="password"
                                                 onChange={(e) => setLoginData({...loginData, password: e.target.value})}
                                                 value={ loginData.password }
                                             />

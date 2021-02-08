@@ -59,6 +59,7 @@ const Signup = ({ match, history }) => {
                                         <FormGroup>
                                             <Label>Password</Label>
                                             <Input 
+                                                 type="password"
                                                  onChange = {(e) => setSignUpData({...signUpData, password: e.target.value})}
                                                  value={signUpData.password}
                                             />
@@ -68,6 +69,7 @@ const Signup = ({ match, history }) => {
                                         <FormGroup>
                                             <Label>Retype Password</Label>
                                             <Input 
+                                                type="password"
                                                  onChange = {(e) => setSignUpData({...signUpData, retype_password: e.target.value})}
                                                  value={signUpData.retype_password}
                                             />
