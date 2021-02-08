@@ -19,7 +19,7 @@ A simple system with Laravel Passport Authentication, Unit Testing, API Integrat
     <b> Frontend: </b> StripeCheckout NPM Package
 </p>
 <p>
-     <b>Backend: Laravel Cartalyst Stripe </b>
+    <b>Backend: </b> Laravel Cartalyst Stripe 
 </p>
     <b> API Search Package:</b>  Laravel Scout with Algolia driver
 </p>
